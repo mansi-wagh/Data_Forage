@@ -191,10 +191,12 @@ STREAMLIT_GATHER_USAGE_STATS=false
 
 ## Screenshots / Demo Section
 
-![Dashboard View](https://placehold.co/800x450/0b0f19/3b82f6?text=Interactive+Visual+Dashboard)
+![Dashboard View](<img width="1910" height="872" alt="image" src="https://github.com/user-attachments/assets/d9cc76ca-297d-4eb1-89ab-fb3097a2255a" />
+)
 *Dynamic Dark-Mode Dashboard with KPI Grid and Plotly Analytics*
 
-![AI Analyst Report](https://placehold.co/800x450/0b0f19/14b8a6?text=Groq-Powered+AI+Analyst)
+![AI Analyst Report](<img width="1905" height="857" alt="image" src="https://github.com/user-attachments/assets/94954583-3a21-4da3-9b5c-0c882afe7a2b" />
+)
 *Executive Insights Generated via Metadata-Injection*
 
 ---
