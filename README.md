@@ -273,11 +273,3 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-
-## Author
-
-**Data Engineer / AI Developer**
-* **GitHub:** [your-github-username](https://github.com/)
-* **LinkedIn:** [your-linkedin-profile](https://linkedin.com/)
-* **Portfolio:** [your-portfolio.dev](https://example.com)
-* **Email:** [your.email@example.com](mailto:test@example.com)
