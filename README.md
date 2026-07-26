@@ -1,73 +1,221 @@
 <div align="center">
 
-# Data_Forage
+# 🔬 Data Forage
 
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
-[![Groq](https://img.shields.io/badge/AI-Groq-orange.svg)](https://groq.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+> AI-powered autonomous data analyst that transforms raw CSV datasets into interactive dashboards with cleaning, domain detection, KPIs, visualizations, and executive AI insights — in seconds.
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.32-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.2-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-1.26-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-5.19-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-Llama--3.3--70B-F55036?style=for-the-badge&logo=meta&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </div>
 
+<<<<<<< HEAD
 ### Executive Overview
 * **What it is:** A production-grade, autonomous data preprocessing and analytics engine.
 * **What it does:** Transforms raw, unstructured tabular datasets into interactive, AI-driven HTML dashboards instantly.
 * **Why it matters:** Eliminates the manual overhead of data cleaning, exploratory data analysis (EDA), and insight generation, leveraging Groq's high-speed inference to deliver actionable intelligence in seconds.
+=======
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology | Purpose |
+|:---|:---|:---|
+| **Frontend** | Streamlit | Interactive UI with session state management |
+| **Data Processing** | Pandas, NumPy | Vectorized data cleaning and transformation |
+| **Visualization** | Plotly | Interactive WebGL charts with HTML export |
+| **AI / ML** | Groq SDK, Llama-3.3-70B | Real-time AI insights via LPU inference |
+| **Environment** | python-dotenv | Secure API key management |
+| **Deployment** | Docker, Render, Railway | Containerized cloud deployment |
+>>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
-## Problem Statement
+## 📑 Table of Contents
 
+<<<<<<< HEAD
 * **Data Overload:** Organizations generate vast amounts of dirty, unstructured tabular data that sit unused in silos.
 * **Manual Bottlenecks:** Traditional data analysis requires hours of manual preprocessing, imputation, and feature mapping before yielding any value.
 * **Inefficient Reporting:** Translating statistical findings into executive-friendly visualizations is slow and repetitive.
 * **The Solution:** Data_Forage automates the complete data lifecycle—from ingestion and anomaly correction to AI-assisted semantic insight extraction—reducing time-to-insight by 99%.
+=======
+- [Project Overview](#-project-overview)
+- [Key Features](#-key-features)
+- [Dataset](#-dataset)
+- [Architecture](#-architecture)
+- [Setup Guide](#-setup-guide)
+- [API Documentation](#-api-documentation)
+- [Future Improvements](#-future-improvements)
+- [License](#-license)
+>>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
-## Key Features
+## 📖 Project Overview
 
+<<<<<<< HEAD
 * **Autonomous Data Sanitization:** Dynamically imputes missing values and removes duplicates, ensuring data integrity prior to analysis.
 * **Intelligent Domain Inference:** Classifies datasets (e.g., Sales, HR, Finance) dynamically via heuristic column scanning to calculate context-aware KPIs.
 * **Real-Time AI Intelligence:** Integrates Groq’s Llama-3 API to generate executive summaries, anomaly reports, and strategic action plans.
 * **Conversational Analytics:** Features a RAG-inspired chatbot allowing users to query dataset semantics and distributions interactively.
 * **Dynamic Visualizations:** Programmatically renders responsive Plotly charts tailored to inferred domains and numeric/categorical fields.
 * **Static Report Compilation:** Packages cleaning logs, KPIs, charts, and insights into a portable, zero-dependency HTML artifact.
+=======
+Organizations generate massive volumes of tabular data (CSV files from HR, Sales, Finance, Marketing, etc.) that sit unused because traditional analysis requires hours of manual preprocessing, imputation, and visualization before yielding any value.
+
+**Data Forage** solves this by automating the entire data lifecycle. Upload a CSV and the system automatically cleans it (handles missing values, duplicates, outliers, type casting), detects the business domain, calculates context-aware KPIs, generates interactive Plotly charts, and uses Groq's Llama-3.3 to produce executive-level AI insights — all packaged into a downloadable PowerBI-style HTML dashboard.
+>>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
-## System Architecture
+## ✨ Key Features
 
+<<<<<<< HEAD
 * **Frontend:** Streamlit handles session state, file ingestion, and renders interactive UI components.
 * **Processing Core:** Pandas and NumPy execute vectorized operations for high-performance data sanitization.
 * **AI/ML Layer:** Groq SDK performs lightweight metadata injection to provide LLMs with tabular context without massive payload costs.
 * **Visualization Engine:** Plotly Graph Objects dynamically serialize vector graphics into HTML.
-
-```mermaid
-graph TD
-    UI[Frontend: Streamlit] -->|Upload CSV| Ingest[Data Ingestion Layer]
-    Ingest --> Clean[DataCleaner]
-    Clean -->|Cleaned DataFrame| DD[DomainDetector]
-    Clean -->|Cleaned DataFrame| FA[FieldAnalyzer]
-    
-    DD -->|Domain Context| CE[ChartEngine]
-    FA -->|Field Typings| CE
-    
-    DD -->|Domain Context| AI[Groq AI Analyst]
-    FA -->|Field Context| AI
-    Clean -->|Metadata/Stats| AI
-    
-    CE -->|Plotly Figures| RB[ReportBuilder]
-    AI -->|HTML Insights| RB
-    Clean -->|Cleaning Logs| RB
-    
-    RB -->|Static Dashboard| Output[HTML Artifact Export]
-```
+=======
+- **Autonomous Data Cleaning** — Removes duplicates, imputes missing values (median/mode), fixes data types, strips outliers via Z-score, and standardizes column names automatically.
+- **Smart Domain Detection** — Classifies datasets into HR, Sales, Finance, Marketing, Healthcare, or Inventory using heuristic keyword scoring (~96% accuracy).
+- **Dynamic KPI Generation** — Calculates domain-specific KPIs (e.g., Total Revenue, Attrition Rate, Net Profit) based on detected domain.
+- **Interactive Visualizations** — Generates up to 12 Plotly charts tailored to the dataset's domain — bar charts, pie charts, scatter plots, histograms, box plots, and trend lines.
+- **AI-Powered Insights** — Groq's Llama-3.3-70B generates executive summaries, anomaly reports, improvement recommendations, and 30-day action plans.
+- **Conversational Analytics** — Built-in chatbot lets you ask questions about your data with context-aware, multi-turn responses.
+- **HTML Report Export** — Packages everything (KPIs, charts, cleaning logs, AI insights) into a portable, zero-dependency dark-themed HTML dashboard.
+- **Cleaned CSV Export** — Download the sanitized dataset with standardized columns and handled edge cases.
 
 ---
 
-## Tech Stack
+## 📊 Dataset
 
+### 7.1 Dataset Overview
+
+Data Forage accepts **any tabular CSV dataset** as input. It is not tied to a specific dataset — the system dynamically adapts to whatever data you upload. Optimized for enterprise datasets in HR, Sales, Finance, Marketing, Healthcare, and Inventory domains. Supports CSV files with UTF-8 or Latin-1 encoding.
+
+### 7.2 Supported Domains
+
+| Domain | Example Columns | Auto-Detected KPIs |
+|:---|:---|:---|
+| Employee / HR | salary, department, attrition, experience | Avg Salary, Total Payroll, Attrition Rate |
+| Sales | revenue, product, region, customer | Total Revenue, Avg Order, Total Profit |
+| Finance | income, expense, balance, account | Total Income, Total Expense, Net Profit |
+| Marketing | campaign, clicks, conversions, channel | Clicks by Channel, Top Campaigns |
+| Healthcare | patient, diagnosis, treatment, hospital | Total Rows, Missing Values |
+| Inventory | stock, warehouse, sku, supplier | Total Rows, Missing Values |
+| General | *(any other data)* | Row Count, Column Count, Averages |
+
+### 7.3 Data Preprocessing
+
+The `DataCleaner` module applies the following steps automatically:
+
+1. **Column name standardization** — lowercase, stripped, underscored
+2. **Duplicate removal** — exact row-level deduplication
+3. **Whitespace trimming** — strips leading/trailing spaces from text columns
+4. **Type casting** — auto-converts numeric and datetime columns stored as strings
+5. **Missing value imputation** — median for numeric, mode for categorical; drops columns with >60% nulls
+6. **Outlier removal** — Z-score filtering (threshold = 3σ)
+
+---
+
+## 🏗️ Architecture
+
+### 8.1 System Architecture
+
+Data Forage follows a modular pipeline architecture. The Streamlit frontend handles file upload and UI rendering. The processing core (Pandas/NumPy) cleans and profiles data. The AI layer sends metadata (not raw rows) to Groq for insights. The chart engine generates Plotly figures, and the report builder compiles everything into a static HTML dashboard.
+>>>>>>> 085bfc7 (Improve in documentation)
+
+```mermaid
+graph TD
+    UI["🖥️ Streamlit Frontend"] -->|Upload CSV| INGEST["📥 Data Ingestion"]
+    INGEST --> CLEAN["🧹 DataCleaner"]
+    CLEAN -->|Cleaned DataFrame| DOMAIN["🎯 DomainDetector"]
+    CLEAN -->|Cleaned DataFrame| FIELD["📋 FieldAnalyzer"]
+
+    DOMAIN -->|Domain Context| CHART["📊 ChartEngine"]
+    FIELD -->|Field Typings| CHART
+
+    DOMAIN -->|Domain Context| AI["🤖 AIAnalyst - Groq"]
+    FIELD -->|Field Context| AI
+    CLEAN -->|Metadata + Stats| AI
+
+    CHART -->|Plotly Figures| REPORT["📄 ReportBuilder"]
+    AI -->|HTML Insights| REPORT
+    CLEAN -->|Cleaning Logs| REPORT
+
+    REPORT -->|HTML Dashboard| EXPORT["💾 Export"]
+    REPORT -->|Cleaned CSV| EXPORT
+```
+
+<<<<<<< HEAD
+=======
+### 8.2 User Journey
+
+```mermaid
+flowchart LR
+    A["Open App"] --> B["Upload CSV"]
+    B --> C["Auto Clean & Profile"]
+    C --> D["View Dashboard"]
+    D --> E["Generate AI Insights"]
+    E --> F["Chat with Data"]
+    F --> G["Download Report + CSV"]
+```
+
+### 8.3 Data Pipeline Flow
+
+```mermaid
+flowchart TD
+    A["Raw CSV Upload"] --> B["Encoding Detection<br/>UTF-8 / Latin-1"]
+    B --> C["Column Standardization"]
+    C --> D["Duplicate Removal"]
+    D --> E["Whitespace Trimming"]
+    E --> F["Type Casting<br/>numeric + datetime"]
+    F --> G["Missing Value Imputation<br/>median / mode"]
+    G --> H["Outlier Removal<br/>Z-score > 3σ"]
+    H --> I["Domain Detection<br/>Keyword Scoring"]
+    I --> J["Field Analysis<br/>numeric / categorical / datetime"]
+    J --> K["Chart Generation<br/>Up to 12 Plotly Charts"]
+    K --> L["AI Insight Generation<br/>Groq Llama-3.3"]
+    L --> M["HTML Report Build"]
+```
+
+### 8.4 Component Interaction
+
+```mermaid
+graph LR
+    subgraph Core Modules
+        DC["DataCleaner"]
+        DD["DomainDetector"]
+        FA["FieldAnalyzer"]
+        CE["ChartEngine"]
+        AA["AIAnalyst"]
+        RB["ReportBuilder"]
+    end
+
+    DC -->|cleaned_df| DD
+    DC -->|cleaned_df| FA
+    DD -->|domain, icon, color, confidence| CE
+    FA -->|field_types| CE
+    DD -->|domain| AA
+    FA -->|fields| AA
+    DC -->|stats, metadata| AA
+    CE -->|charts| RB
+    AA -->|ai_insights| RB
+    DC -->|cleaning_log| RB
+    FA -->|fields| RB
+```
+
+>>>>>>> 085bfc7 (Improve in documentation)
+---
+
+## ⚙️ Setup Guide
+
+<<<<<<< HEAD
 | Category | Technology | Engineering Rationale |
 | :--- | :--- | :--- |
 | **Frontend** | Streamlit | Rapid prototyping of stateful, data-heavy interfaces. |
@@ -75,9 +223,18 @@ graph TD
 | **Visualization** | Plotly | Interactive WebGL graphics with seamless HTML serialization capabilities. |
 | **AI/ML** | Groq SDK, Llama-3 | Groq's LPU architecture delivers sub-second Time-To-First-Token (TTFT) for real-time UX. |
 | **Environment** | `python-dotenv` | Secure, isolated management of application secrets and API keys. |
+=======
+### 9.1 Prerequisites
+>>>>>>> 085bfc7 (Improve in documentation)
 
----
+| Software | Version | Required |
+|:---|:---|:---|
+| Python | 3.11+ | ✅ |
+| pip | Latest | ✅ |
+| Git | Any | ✅ |
+| Groq API Key | Free tier | ✅ (for AI features) |
 
+<<<<<<< HEAD
 ## Data Pipeline
 
 1. **Data Ingestion:** Streams CSV uploads into memory with dynamic encoding fallbacks (UTF-8 to Latin-1).
@@ -113,18 +270,103 @@ data_forage/
 │   ├── field_analyzer.py   # Type inference and feature clustering
 │   └── report_builder.py   # HTML string templating and compilation
 └── requirements.txt        # Pinned project dependencies
+=======
+### 9.2 Project Structure
+
+```text
+Data_forage/
+├── app.py                  # Streamlit entry point and UI orchestrator
+├── requirements.txt        # Pinned project dependencies
+├── .env                    # Environment variables (GROQ_API_KEY)
+├── .gitignore              # Git ignore rules
+├── .streamlit/
+│   └── config.toml         # Streamlit theme configuration
+└── core/
+    ├── ai_analyst.py       # Groq API integration and prompt orchestration
+    ├── chart_engine.py     # Domain-specific Plotly chart generation
+    ├── data_cleaner.py     # Automated data sanitization pipeline
+    ├── domain_detector.py  # Heuristic keyword scoring for domain classification
+    ├── field_analyzer.py   # Column type inference and feature clustering
+    └── report_builder.py   # HTML dashboard templating and compilation
+>>>>>>> 085bfc7 (Improve in documentation)
 ```
+
+### 9.3 Environment Variables
+
+| Variable | Description | Required |
+|:---|:---|:---|
+| `GROQ_API_KEY` | Groq inference API key ([Get free key](https://console.groq.com/keys)) | ✅ |
+| `STREAMLIT_GATHER_USAGE_STATS` | Disable Streamlit telemetry (set to `false`) | Optional |
+
+### 9.4 Installation Guide
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/Data_forage.git
+cd Data_forage
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate        # Linux/macOS
+venv\Scripts\activate           # Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Configure environment
+cp .env.example .env
+# Add your GROQ_API_KEY to .env
+
+# 5. Run the application
+streamlit run app.py
+```
+
+### 9.5 Five-Minute Quick Start
+
+1. Clone the repo and `cd` into it
+2. Run `pip install -r requirements.txt`
+3. Get a free API key from [console.groq.com/keys](https://console.groq.com/keys)
+4. Create `.env` with `GROQ_API_KEY=your_key_here`
+5. Run `streamlit run app.py`
+6. Upload any CSV file via the sidebar
+7. Explore dashboard → generate AI insights → download report 🎉
 
 ---
 
-## API Endpoints
+## 📡 API Documentation
 
+<<<<<<< HEAD
 *Note: Currently operating via Streamlit UI. Designed for easy decoupling into a FastAPI microservice.*
 
 * **Endpoint:** `POST /api/v1/analyze`
 * **Purpose:** Processes a raw CSV and returns structured JSON metadata alongside the HTML report.
 * **Request:** `multipart/form-data` -> `file: dataset.csv`
 * **Response Example:**
+=======
+### 10.1 Authentication
+
+Data Forage uses API key authentication for the Groq AI service. No user login is required for the Streamlit UI.
+
+| Role | Access |
+|:---|:---|
+| User | Full access — upload, analyze, export |
+| AI Service | Groq API key required for AI insights and chat |
+
+### 10.2 API Endpoints
+
+> **Note:** Data Forage currently operates as a Streamlit UI application. The architecture is designed for easy decoupling into a FastAPI microservice.
+
+**Planned endpoint:**
+
+| Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | `/api/v1/analyze` | Upload CSV, receive JSON metadata + HTML report |
+
+**Request:** `multipart/form-data` → `file: dataset.csv`
+
+**Response Example:**
+
+>>>>>>> 085bfc7 (Improve in documentation)
 ```json
 {
   "status": "success",
@@ -134,22 +376,37 @@ data_forage/
     "Total Revenue": "$1,450,230",
     "Avg Order": "$124.50"
   },
-  "report_url": "https://storage.local/reports/sales_report_123.html"
+  "report_url": "/reports/sales_report_123.html"
 }
 ```
 
----
+### 10.3 Error Responses
 
-## Installation & Setup
+| Code | Meaning |
+|:---|:---|
+| 200 | Success |
+| 400 | Bad Request — invalid CSV format or encoding |
+| 401 | Unauthorized — missing or invalid GROQ_API_KEY |
+| 500 | Internal Server Error — processing failure |
 
+<<<<<<< HEAD
 * **Prerequisites:** Python 3.11+, Groq API Key
+=======
+### 10.4 Usage Guide
 
-1. **Clone the repository:**
-```bash
-git clone https://github.com/yourusername/data_forage.git
-cd data_forage
+**Upload and analyze via the UI:**
+>>>>>>> 085bfc7 (Improve in documentation)
+
+```text
+1. Open http://localhost:8501 in your browser
+2. Use the sidebar to upload a CSV file
+3. Dashboard auto-generates with KPIs and charts
+4. Click "Generate AI insights" on the AI Analyst tab
+5. Use the chatbot to ask questions about your data
+6. Go to Export Center to download cleaned CSV + HTML report
 ```
 
+<<<<<<< HEAD
 2. **Initialize Virtual Environment:**
 ```bash
 python -m venv venv
@@ -244,6 +501,11 @@ STREAMLIT_GATHER_USAGE_STATS=false
 ## Deployment
 
 * **Docker Containerization:** 
+=======
+### 10.5 Deployment Guide
+
+**Docker:**
+>>>>>>> 085bfc7 (Improve in documentation)
 
 ```dockerfile
 FROM python:3.11-slim
@@ -255,12 +517,40 @@ EXPOSE 8501
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 ```
 
+<<<<<<< HEAD
 * **Cloud Hosting:** Ready for seamless deployment on Render, Railway, or AWS ECS by passing the `GROQ_API_KEY` into the respective secret manager.
+=======
+**Cloud platforms:** Ready for deployment on **Render**, **Railway**, or **AWS ECS** by passing the `GROQ_API_KEY` into the platform's secret manager.
+>>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
-## License
+## 🚀 Future Improvements
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Polars Migration** — Replace Pandas with Polars for 10x faster vectorized operations with lazy evaluation
+- **FastAPI Microservice** — Decouple the UI and wrap core modules in a REST API for CI/CD pipeline integration
+- **Async Processing** — Integrate Celery + Redis worker queues for large file uploads without blocking the UI thread
+- **Multi-Modal Parsing** — Add OCR and PDF extraction to merge unstructured report data with structured CSVs
+- **Real-Time Collaboration** — WebSocket-based multi-user dashboard editing
+- **Scheduled Reports** — Cron-based automated report generation and email delivery
+- **Advanced ML Models** — Integrate predictive analytics (forecasting, anomaly detection) alongside descriptive insights
+- **Multi-Language Support** — Generate AI insights in multiple languages for global teams
+- **Export Formats** — Add PDF and PowerPoint export alongside HTML
+- **Plugin Architecture** — Allow users to add custom domain detectors and chart types
 
 ---
+<<<<<<< HEAD
+=======
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**Built with ❤️ using Python, Streamlit, Plotly, and Groq AI**
+
+</div>
+>>>>>>> 085bfc7 (Improve in documentation)
