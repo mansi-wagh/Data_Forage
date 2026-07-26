@@ -14,7 +14,7 @@
 
 </div>
 
-<<<<<<< HEAD
+
 ### Executive Overview
 * **What it is:** A production-grade, autonomous data preprocessing and analytics engine.
 * **What it does:** Transforms raw, unstructured tabular datasets into interactive, AI-driven HTML dashboards instantly.
@@ -32,13 +32,12 @@
 | **AI / ML** | Groq SDK, Llama-3.3-70B | Real-time AI insights via LPU inference |
 | **Environment** | python-dotenv | Secure API key management |
 | **Deployment** | Docker, Render, Railway | Containerized cloud deployment |
->>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
 ## 📑 Table of Contents
 
-<<<<<<< HEAD
+
 * **Data Overload:** Organizations generate vast amounts of dirty, unstructured tabular data that sit unused in silos.
 * **Manual Bottlenecks:** Traditional data analysis requires hours of manual preprocessing, imputation, and feature mapping before yielding any value.
 * **Inefficient Reporting:** Translating statistical findings into executive-friendly visualizations is slow and repetitive.
@@ -52,13 +51,12 @@
 - [API Documentation](#-api-documentation)
 - [Future Improvements](#-future-improvements)
 - [License](#-license)
->>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
 ## 📖 Project Overview
 
-<<<<<<< HEAD
+
 * **Autonomous Data Sanitization:** Dynamically imputes missing values and removes duplicates, ensuring data integrity prior to analysis.
 * **Intelligent Domain Inference:** Classifies datasets (e.g., Sales, HR, Finance) dynamically via heuristic column scanning to calculate context-aware KPIs.
 * **Real-Time AI Intelligence:** Integrates Groq’s Llama-3 API to generate executive summaries, anomaly reports, and strategic action plans.
@@ -69,13 +67,12 @@
 Organizations generate massive volumes of tabular data (CSV files from HR, Sales, Finance, Marketing, etc.) that sit unused because traditional analysis requires hours of manual preprocessing, imputation, and visualization before yielding any value.
 
 **Data Forage** solves this by automating the entire data lifecycle. Upload a CSV and the system automatically cleans it (handles missing values, duplicates, outliers, type casting), detects the business domain, calculates context-aware KPIs, generates interactive Plotly charts, and uses Groq's Llama-3.3 to produce executive-level AI insights — all packaged into a downloadable PowerBI-style HTML dashboard.
->>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
 ## ✨ Key Features
 
-<<<<<<< HEAD
+
 * **Frontend:** Streamlit handles session state, file ingestion, and renders interactive UI components.
 * **Processing Core:** Pandas and NumPy execute vectorized operations for high-performance data sanitization.
 * **AI/ML Layer:** Groq SDK performs lightweight metadata injection to provide LLMs with tabular context without massive payload costs.
@@ -128,7 +125,6 @@ The `DataCleaner` module applies the following steps automatically:
 ### 8.1 System Architecture
 
 Data Forage follows a modular pipeline architecture. The Streamlit frontend handles file upload and UI rendering. The processing core (Pandas/NumPy) cleans and profiles data. The AI layer sends metadata (not raw rows) to Groq for insights. The chart engine generates Plotly figures, and the report builder compiles everything into a static HTML dashboard.
->>>>>>> 085bfc7 (Improve in documentation)
 
 ```mermaid
 graph TD
@@ -152,7 +148,7 @@ graph TD
     REPORT -->|Cleaned CSV| EXPORT
 ```
 
-<<<<<<< HEAD
+
 =======
 ### 8.2 User Journey
 
@@ -210,12 +206,10 @@ graph LR
     FA -->|fields| RB
 ```
 
->>>>>>> 085bfc7 (Improve in documentation)
 ---
 
 ## ⚙️ Setup Guide
 
-<<<<<<< HEAD
 | Category | Technology | Engineering Rationale |
 | :--- | :--- | :--- |
 | **Frontend** | Streamlit | Rapid prototyping of stateful, data-heavy interfaces. |
@@ -225,7 +219,6 @@ graph LR
 | **Environment** | `python-dotenv` | Secure, isolated management of application secrets and API keys. |
 =======
 ### 9.1 Prerequisites
->>>>>>> 085bfc7 (Improve in documentation)
 
 | Software | Version | Required |
 |:---|:---|:---|
@@ -234,7 +227,7 @@ graph LR
 | Git | Any | ✅ |
 | Groq API Key | Free tier | ✅ (for AI features) |
 
-<<<<<<< HEAD
+
 ## Data Pipeline
 
 1. **Data Ingestion:** Streams CSV uploads into memory with dynamic encoding fallbacks (UTF-8 to Latin-1).
@@ -288,7 +281,6 @@ Data_forage/
     ├── domain_detector.py  # Heuristic keyword scoring for domain classification
     ├── field_analyzer.py   # Column type inference and feature clustering
     └── report_builder.py   # HTML dashboard templating and compilation
->>>>>>> 085bfc7 (Improve in documentation)
 ```
 
 ### 9.3 Environment Variables
@@ -335,7 +327,7 @@ streamlit run app.py
 
 ## 📡 API Documentation
 
-<<<<<<< HEAD
+
 *Note: Currently operating via Streamlit UI. Designed for easy decoupling into a FastAPI microservice.*
 
 * **Endpoint:** `POST /api/v1/analyze`
@@ -366,7 +358,6 @@ Data Forage uses API key authentication for the Groq AI service. No user login i
 
 **Response Example:**
 
->>>>>>> 085bfc7 (Improve in documentation)
 ```json
 {
   "status": "success",
@@ -505,7 +496,6 @@ STREAMLIT_GATHER_USAGE_STATS=false
 ### 10.5 Deployment Guide
 
 **Docker:**
->>>>>>> 085bfc7 (Improve in documentation)
 
 ```dockerfile
 FROM python:3.11-slim
@@ -521,7 +511,6 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 * **Cloud Hosting:** Ready for seamless deployment on Render, Railway, or AWS ECS by passing the `GROQ_API_KEY` into the respective secret manager.
 =======
 **Cloud platforms:** Ready for deployment on **Render**, **Railway**, or **AWS ECS** by passing the `GROQ_API_KEY` into the platform's secret manager.
->>>>>>> 085bfc7 (Improve in documentation)
 
 ---
 
@@ -539,7 +528,6 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 - **Plugin Architecture** — Allow users to add custom domain detectors and chart types
 
 ---
-<<<<<<< HEAD
 =======
 
 ## 📄 License
@@ -553,4 +541,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 **Built with ❤️ using Python, Streamlit, Plotly, and Groq AI**
 
 </div>
->>>>>>> 085bfc7 (Improve in documentation)
